@@ -17,7 +17,7 @@
 
   justify-content: space-around;
 
-  align-items: baseline;
+  align-items: stretch;
 }
 
 #container > div {
@@ -29,4 +29,25 @@
 
   font-size: 30px;
   padding: 50px;
+}
+
+#container > div:nth-child(1) {
+  order: 0;
+}
+
+#container > div:nth-child(2) {
+  order: 3;
+}
+
+#container > div:nth-child(3) {
+  order: 2;
+  flex-basis: 50%;
+}
+
+#container > div:nth-child(4) {
+  order: 1;
+}
+
+#container > div:nth-child(5) {
+  order: 4;
 }
